@@ -1,5 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: ;
+  transition-duration: 1.2s;
+}
+
+h1, h2, h3, p {
+  position: relative;
+  z-index: 99;
+}
+
 .logo-bar {
-  padding: 90px 0 130px 0;
+  padding: 14em 0 18em 0;
 }
 
 .page-item {
@@ -32,14 +46,37 @@
   position: absolute;
   width: 50%;
   left: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  z-index: 0;
 }
 
 .invisible-block-right {
   position: absolute;
   width: 50%;
   left: 50%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  z-index: 0;
+}
+
+.black {
+  color: white;
+  background-image: url(dark-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 782px){
+
+.invisible-block-left {
+  display:none;
+}
+
+.invisible-block-right {
+  display:none;
+}
+  
 }
